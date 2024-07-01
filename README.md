@@ -97,15 +97,15 @@ Understanding VPC peering within and between regions, including setup, managemen
 - Test the connectivity
 
 ## Day 10: AWS Client VPN
-What is AWS Client VPN?
-Features of Client VPN
-Components of Client VPN
-Limitations and rules of Client VPN
-Lab Session - Creation of Active Directory in AWS
-Lab Session - Creation of ACM
-Lab Session - Creation of the client VPN endpoint
-Test the connection using Private IP
-Lab Session - Deletion of the client VPN endpoint
+- What is AWS Client VPN?
+- Features of Client VPN
+- Components of Client VPN
+- Limitations and rules of Client VPN
+- Lab Session - Creation of Active Directory in AWS
+- Lab Session - Creation of ACM
+- Lab Session - Creation of the client VPN endpoint
+- Test the connection using Private IP
+- Lab Session - Deletion of the client VPN endpoint
 
 
 ## Day 11: AWS Cloud WAN
