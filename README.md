@@ -32,8 +32,6 @@
 
 4. **VPN Connections**: Allows secure connections between the Transit Gateway and on-premises networks over the internet or AWS Direct Connect.
 
-5. **Inter-Region Peering**: Enables connecting Transit Gateways across different AWS regions for inter-region VPC routing.
-
 ### Difference between VPC Peering and Transit Gateway
 
 **VPC Peering**:
