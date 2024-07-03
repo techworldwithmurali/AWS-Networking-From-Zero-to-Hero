@@ -37,8 +37,8 @@ AWS VPC peering offers a lot of benefits, but there are some limitations and con
   -  Intra-region VPC peering within the different AWS account
    
 2. **Inter-Account VPC Peering**:
-     Inter-region VPC peering within the same AWS account
-     Inter-region VPC peering within the different AWS account
+  -  Inter-region VPC peering within the same AWS account
+  -  Inter-region VPC peering within the different AWS account
    
 
 
