@@ -47,7 +47,7 @@ Exploring VPC Flow Logs, DHCP options, VPC endpoints, and ENIs, plus advanced fe
 - Lab Session - Create an ENI in AWS
 - Lab Session - Delete an AWS VPC
 
-## Day 5: AWS VPC Peering Part 1
+## Day 4: AWS VPC Peering Part 1
 Understanding VPC peering within and between regions, including setup, management, and termination.
 - What is VPC Peering?
 - Key aspects of VPC Peering
@@ -55,7 +55,7 @@ Understanding VPC peering within and between regions, including setup, managemen
 - Lab Session - Intra-region VPC peering within the same AWS account
 - Lab Session - Delete intra-region VPC peering within the same AWS account
 
-## Day 6: AWS VPC Peering Part 2
+## Day 5: AWS VPC Peering Part 2
 - Lab Session - Establish intra-region VPC peering with a different AWS account
 - Lab Session - Terminate intra-region VPC peering with a different AWS account
 - Lab Session - Inter-region VPC peering within the same AWS account
@@ -63,7 +63,7 @@ Understanding VPC peering within and between regions, including setup, managemen
 - Lab Session - Configure inter-region VPC peering with a different AWS account
 - Lab Session - Remove inter-region VPC peering with a different AWS account
 
-## Day 7: AWS Transit Gateway (TGW)
+## Day 6: AWS Transit Gateway (TGW)
 - What is AWS Transit Gateway?
 - Advantages of using AWS Transit Gateway
 - Different types of AWS Transit Gateway
@@ -72,7 +72,7 @@ Understanding VPC peering within and between regions, including setup, managemen
 - Lab Session - Establish inter-region Transit Gateway peering within the same AWS account
 - Lab Session - Terminate inter-region Transit Gateway peering within the same AWS account
 
-## Day 8: AWS Transit Gateway (TGW) Continued
+## Day 7: AWS Transit Gateway (TGW) Continued
 - What is AWS RAM (Resource Access Manager)?
 - Lab Session - Set up inter-region Transit Gateway peering with a different AWS account
 - Lab Session - Terminate inter-region Transit Gateway peering with a different AWS account
@@ -82,7 +82,7 @@ Understanding VPC peering within and between regions, including setup, managemen
 - Lab Session - Establish intra-region Transit Gateway peering with a different AWS account
 - Lab Session - Terminate intra-region Transit Gateway peering with a different AWS account
 
-## Day 9: Site-to-Site VPN
+## Day 8: Site-to-Site VPN
 - What is a Customer Gateway?
 - What is a Virtual Private Gateway?
 - What is a Site-to-Site VPN Connection?
@@ -92,7 +92,7 @@ Understanding VPC peering within and between regions, including setup, managemen
 - Lab Session - Site-to-Site VPN Connection using Openswan
 - Test the connectivity
 
-## Day 10: AWS Client VPN
+## Day 9: AWS Client VPN
 - What is AWS Client VPN?
 - Features of Client VPN
 - Components of Client VPN
@@ -104,7 +104,7 @@ Understanding VPC peering within and between regions, including setup, managemen
 - Lab Session - Deletion of the client VPN endpoint
 
 
-## Day 11: AWS Cloud WAN
+## Day 10: AWS Cloud WAN
 - What is AWS Cloud WAN?
 - Global and core network key concepts
 - Get started with AWS Cloud WAN
