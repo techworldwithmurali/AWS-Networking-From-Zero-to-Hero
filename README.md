@@ -25,12 +25,11 @@ Advanced VPC configurations including NAT instances, NAT gateways, NACLs, and Se
 - Lab Session - Create a customized VPC in AWS
 - NAT Gateway and NAT Instance in AWS VPC
 - Differences between NAT Gateway and NAT Instance
-- Lab Session - Create a NAT Instance in AWS VPC
 - Lab Session - Create a NAT Gateway in AWS VPC
 - Lab Session - Delete a NAT Gateway in AWS VPC
 
 ## Day 3: AWS VPC (Virtual Private Cloud) Part 3
-Exploring VPC Flow Logs, DHCP options, VPC endpoints, and Elastic Network Interfaces (ENIs).
+Exploring VPC Flow Logs, DHCP options, VPC endpoints, and ENIs, plus advanced features like DNS settings, Prefix Lists, and custom VPC deletion procedures.
 - Network Access Control List (NACL) in AWS VPC
 - Lab Session - Create a Network Access Control List (NACL) in AWS VPC
 - Security Group in AWS VPC
@@ -38,9 +37,6 @@ Exploring VPC Flow Logs, DHCP options, VPC endpoints, and Elastic Network Interf
 - Differences between NACL and Security Group in AWS VPC
 - VPC Flow Logs and how to create them
 - Lab Session - Enable VPC Flow Logs
-
-## Day 4: AWS VPC (Virtual Private Cloud) Part 4
-Advanced VPC options like DNS settings, Prefix Lists, and deletion procedures for custom VPC setups.
 - Options for configuring an AWS VPC
 - DHCP Option Set in AWS VPC
 - DNS Hostnames and DNS Resolution in AWS VPC
