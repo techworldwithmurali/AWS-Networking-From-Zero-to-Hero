@@ -6,7 +6,7 @@
 - **Stateless:** Responses to allowed inbound traffic are subject to the rules for outbound traffic (and vice versa).
 - **Subnet-level Security:** Operates at the subnet level.
 - **Rule Order:** Rules are evaluated in order, starting with the lowest numbered rule.
-
+----
 ### Lab Session - Create a Network Access Control List (NACL) in AWS VPC
 
 1. **Open the Amazon VPC Console:**
@@ -28,7 +28,7 @@
    - Choose the **Subnet Associations** tab.
    - Click **Edit Subnet Associations**.
    - Select the subnets to associate with the NACL and click **Save**.
-
+----
 ### Security Group in AWS VPC
 
 **Security Groups** act as a virtual firewall for your EC2 instances to control inbound and outbound traffic. Security groups operate at the instance level and are stateful.
@@ -37,7 +37,7 @@
 - **Stateful:** If you allow an inbound request from an IP, the response is automatically allowed.
 - **Instance-level Security:** Operates at the instance level.
 - **Rules:** Rules can be added or removed without restarting the instance.
-
+----
 ### Lab Session - Create a Security Group in AWS VPC
 
 1. **Open the Amazon EC2 Console:**
@@ -55,7 +55,7 @@
    - Choose the **Inbound Rules** tab and click **Edit Inbound Rules**.
    - Add rules for inbound traffic, specifying type, protocol, port range, and source.
    - Repeat the process for the **Outbound Rules** tab to control outbound traffic.
-
+----
 ### Differences between NACL and Security Group in AWS VPC
 
 | Feature             | NACL                                    | Security Group                         |
@@ -66,6 +66,7 @@
 | **Default Behavior** | Allows all inbound and outbound traffic | Denies all inbound traffic by default; allows all outbound traffic by default |
 | **Association**     | Can be associated with multiple subnets | Can be associated with multiple instances |
 
+----
 ### VPC Flow Logs and How to Create Them
 
 **VPC Flow Logs** capture information about the IP traffic going to and from network interfaces in your VPC. Flow logs can help you with monitoring and troubleshooting network connectivity.
@@ -74,7 +75,7 @@
 - **Capture Network Traffic:** Logs all traffic going in and out of your VPC.
 - **Integration:** Can be sent to CloudWatch Logs, S3, or a partner service.
 - **Filtering:** You can filter logs based on traffic type.
-
+----
 ### Lab Session - Enable VPC Flow Logs
 
 1. **Open the Amazon VPC Console:**
@@ -93,7 +94,7 @@
 
 4. **Create Flow Log:**
    - Click **Create** to enable the flow log.
-
+----
 ### Options for Configuring an AWS VPC
 
 Configuring an AWS Virtual Private Cloud (VPC) involves several options and features to tailor your networking environment to your specific needs. Key options include:
@@ -108,7 +109,7 @@ Configuring an AWS Virtual Private Cloud (VPC) involves several options and feat
 - **DHCP Option Sets**: Configure DNS and other options.
 - **VPC Peering**: Connect two VPCs together.
 - **VPC Endpoints**: Provide private access to AWS services without using an internet gateway.
-
+----
 ### DHCP Option Set in AWS VPC
 
 **DHCP Option Sets** allow you to configure DHCP (Dynamic Host Configuration Protocol) options for your VPC. These options define domain name servers, domain names, and other DHCP options.
@@ -123,7 +124,7 @@ Configuring an AWS Virtual Private Cloud (VPC) involves several options and feat
 
 - **DNS Hostnames**: Enable DNS hostnames to assign a DNS name to EC2 instances.
 - **DNS Resolution**: Allow or disable DNS resolution within your VPC. If enabled, instances can use AWS provided DNS servers.
-
+----
 ### VPC Endpoints in AWS and Types Available
 
 **VPC Endpoints** allow you to privately connect your VPC to supported AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect.
@@ -131,7 +132,7 @@ Configuring an AWS Virtual Private Cloud (VPC) involves several options and feat
 **Types of VPC Endpoints:**
 - **Gateway Endpoints**: For S3 and DynamoDB.
 - **Interface Endpoints**: Use AWS PrivateLink to connect to services.
-
+----
 ### Lab Session - Create a Gateway VPC Endpoint for S3 in AWS
 
 1. **Open the Amazon VPC Console:**
@@ -149,7 +150,7 @@ Configuring an AWS Virtual Private Cloud (VPC) involves several options and feat
 
 4. **Update Route Table:**
    - Ensure the route table associated with your subnets includes a route to the VPC endpoint.
-
+----
 ### Prefix Lists in AWS VPC
 
 **Prefix Lists** are collections of CIDR blocks that you can use to simplify the configuration and management of security groups and route tables.
@@ -157,7 +158,7 @@ Configuring an AWS Virtual Private Cloud (VPC) involves several options and feat
 **Key Features of Prefix Lists:**
 - **Reusable**: Can be shared across multiple security groups and route tables.
 - **Simplified Management**: Easier to manage large sets of CIDR blocks.
-
+----
 ### Elastic Network Interface (ENI) in AWS
 
 **Elastic Network Interfaces (ENIs)** are virtual network interfaces that can be attached to EC2 instances. They are used to manage network traffic, IP addresses, and security group rules.
@@ -166,7 +167,7 @@ Configuring an AWS Virtual Private Cloud (VPC) involves several options and feat
 - **Flexible Attachment**: Can be attached or detached from instances without stopping them.
 - **Multiple IP Addresses**: Can have one or more private IP addresses.
 - **Security Groups**: Can be associated with multiple security groups.
-
+----
 ### Lab Session - Create an ENI in AWS
 
 1. **Open the Amazon EC2 Console:**
@@ -182,7 +183,7 @@ Configuring an AWS Virtual Private Cloud (VPC) involves several options and feat
    - Select the newly created ENI.
    - Click **Actions** and choose **Attach**.
    - Select the instance to attach the ENI to and click **Attach**.
-
+----
 ### Lab Session - Delete an AWS VPC
 
 1. **Open the Amazon VPC Console:**
