@@ -47,9 +47,34 @@ These private IP address ranges are commonly used for creating VPCs, as they are
 **Subnets:** Divisions of IP address ranges within a VPC. Each subnet resides in a specific Availability Zone (AZ).
 
 ### Types of Subnets in AWS VPC
+In an AWS VPC, subnets are segments of the VPC's IP address range where you can launch AWS resources. Different types of subnets serve different purposes, and they can be categorized as follows:
 
-1. **Public Subnets:** Directly accessible from the internet. Typically used for resources that need public access.
-2. **Private Subnets:** Not accessible directly from the internet. Used for resources that require additional security.
+### 1. Public Subnet
+A public subnet is a subnet that has a route to the internet gateway, allowing instances within it to communicate directly with the internet. Typically, these subnets are used for resources that need to be publicly accessible, such as:
+
+- Web servers
+- Bastion hosts
+- NAT gateways (to provide internet access to private subnets)
+
+### 2. Private Subnet
+A private subnet is a subnet that does not have a route to the internet gateway, ensuring that instances within it cannot directly access the internet. These subnets are used for resources that should not be accessible from the public internet, such as:
+
+- Backend servers (e.g., application servers)
+- Databases
+- Internal services
+
+### 3. Application Subnet
+An application subnet (often a type of private subnet) is typically used to host application layer services. These subnets are often isolated to enhance security and reduce exposure to potential threats. Examples of resources that might reside in an application subnet include:
+
+- Application servers
+- Middleware services
+
+### 4. Data Subnet
+A data subnet (another type of private subnet) is used specifically for data storage and management services. These subnets are designed to host resources that manage data, such as:
+
+- Databases (e.g., Amazon RDS, NoSQL databases)
+- Data warehouses
+- Storage services (e.g., Amazon EFS)
 
 ### Subnet Sizing for IPv4
 
