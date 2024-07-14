@@ -26,6 +26,22 @@ AWS Virtual Private Cloud (VPC) is a virtual network that you create in AWS. It 
 - **IPv4:** Standard IP addressing scheme, limited by the number of available addresses.
 - **IPv6:** Next-generation IP addressing scheme, offering a vastly larger number of addresses to accommodate future growth.
 
+### IPv4 VPC CIDR blocks
+- When creating a Virtual Private Cloud (VPC) in AWS, you must specify an IPv4 CIDR block for the VPC.
+- The CIDR block must have a block size between a /16 netmask (which provides 65,536 IP addresses) and a /28 netmask (which provides 16 IP addresses).
+- After creating the VPC, you can associate additional IPv4 CIDR blocks with it as needed. For more details, refer to the AWS documentation on how to [add or remove a CIDR block from your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#vpc-resize).
+
+It is recommended to specify a CIDR block from the private IPv4 address ranges defined in RFC 1918 when creating your VPC. The following are the private IPv4 address ranges as specified in RFC 1918 along with example CIDR blocks:
+
+- **10.0.0.0 - 10.255.255.255 (10/8 prefix)**
+  - Example CIDR block: `10.0.0.0/16`
+- **172.16.0.0 - 172.31.255.255 (172.16/12 prefix)**
+  - Example CIDR block: `172.31.0.0/16`
+- **192.168.0.0 - 192.168.255.255 (192.168/16 prefix)**
+  - Example CIDR block: `192.168.0.0/20`
+
+These private IP address ranges are commonly used for creating VPCs, as they are not routable on the public internet and help ensure network isolation.
+
 ### Subnets in AWS VPC
 
 **Subnets:** Divisions of IP address ranges within a VPC. Each subnet resides in a specific Availability Zone (AZ).
