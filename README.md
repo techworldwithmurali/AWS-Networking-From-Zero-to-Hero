@@ -9,7 +9,7 @@ AWS Virtual Private Cloud (VPC) is a virtual network that you create in AWS. It 
 3. **Scalability:** Easily scale your VPC as your AWS resources grow.
 4. **Security:** Secure your resources using security groups and network access control lists (ACLs).
 5. **Connectivity:** Connect your VPC to other networks using VPN or AWS Direct Connect.
-
+----
 ### CIDR (Classless Inter-Domain Routing)
 
 **CIDR:** A method for allocating IP addresses and routing Internet Protocol packets. It uses a slash notation (e.g., 10.0.0.0/16) to define the range of IP addresses in a network.
@@ -42,6 +42,7 @@ It is recommended to specify a CIDR block from the private IPv4 address ranges d
 
 These private IP address ranges are commonly used for creating VPCs, as they are not routable on the public internet and help ensure network isolation.
 
+----
 ### Subnets in AWS VPC
 
 **Subnets:** Divisions of IP address ranges within a VPC. Each subnet resides in a specific Availability Zone (AZ).
@@ -85,7 +86,7 @@ A data subnet (another type of private subnet) is used specifically for data sto
 
 - Each subnet has a route table that defines how traffic is routed within the VPC and to external networks.
 - Route tables specify which subnets traffic should be routed to based on the destination IP address.
-
+---
 ### Route Table in AWS VPC
 
 **Route Table:** Controls the routing for the subnet. It contains a set of rules (routes) that determine where network traffic from the subnet is directed.
@@ -94,11 +95,16 @@ A data subnet (another type of private subnet) is used specifically for data sto
 
 1. **Routes:** Define where traffic should go based on the destination IP address.
 2. **Association:** Associates subnets with the route table to control their routing behavior.
-
+----
 ### Internet Gateway (IGW) in AWS VPC
 
 **Internet Gateway (IGW):** Allows communication between instances in your VPC and the internet. It serves as a gateway that translates network traffic between the internet and your VPC.
+### Key Characteristics
 
+- **Horizontally Scalable and Highly Available**: An IGW is designed to handle a large amount of traffic and is highly available across multiple Availability Zones in the region.
+- **No Cost**: There is no additional cost to use an IGW, but you will be charged for data transfer and any other AWS services used.
+- **Direct Connectivity**: It allows instances in a public subnet to connect directly to the internet.
+----
 ### Lab Session - Overview of the Default VPC in AWS
 
 1. **Sign in to AWS Management Console:**
