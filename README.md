@@ -1,6 +1,7 @@
 ### What is AWS VPC (Virtual Private Cloud)?
 
-AWS Virtual Private Cloud (VPC) is a virtual network that you create in AWS. It allows you to launch AWS resources, such as EC2 instances, into a virtual network that you define. This gives you control over your network environment, including IP address range selection, subnets, route tables, and network gateways.
+- AWS Virtual Private Cloud (VPC) is a virtual network that you create in AWS. It allows you to launch AWS resources, such as EC2 instances, into a virtual network that you define.
+- This gives you control over your network environment, including IP address range selection, subnets, route tables, and network gateways.
 
 ### Key Features of AWS VPC
 
