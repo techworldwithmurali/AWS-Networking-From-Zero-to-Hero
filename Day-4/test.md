@@ -211,7 +211,7 @@ Name: infra-vpc-to-prod-vpc-peering
 
 ### Step 31: Update the route tables in both VPCs to allow traffic to the other VPC.
 
-+ Below the route tables, add a route for the PROD CIDR block to the infra-vpc-to-prod-vpc-peering connection:
++ Below the route tables, add a route for the PROD CIDR block to the **infra-vpc-to-prod-vpc-peering** connection:
 
 ```xml
 Route Tables:
@@ -224,7 +224,7 @@ Infra-Private-RouteTable-us-east-1b
 VPC-B CIDR : 10.60.0.0/16
 ```
 
-+ Below the route tables, add a route for the Infra CIDR block to the prod-vpc-to-infra-vpc-peering connection:
++ Below the route tables, add a route for the Infra CIDR block to the **prod-vpc-to-infra-vpc-peering** connection:
 
 ```xml
 Route Tables:
