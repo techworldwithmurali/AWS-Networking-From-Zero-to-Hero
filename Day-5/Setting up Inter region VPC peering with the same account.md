@@ -48,7 +48,7 @@ Name: Infra-data-subnet-1b
 ```xml
 Name: Infra-VPC-IGW
 ```
-### Step 7: Create a route table and name it Infra-VPC-Public-RouteTable and attach the public subnets to this RouteTable.
+### Step 7: Create a route table and name it <span style="color:red">Infra-VPC-Public-RouteTable</span> and attach the public subnets to this RouteTable.
 ```xml
 Name: Infra-Public-RouteTable
 ```
