@@ -53,13 +53,13 @@ Name: Infra-VPC-IGW
 Name: Infra-Public-RouteTable
 ```
 
-Step 8: Create a route table and name it Infra-Private-RouteTable-us-east-1a, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
+## Step 8: Create a route table and name it Infra-Private-RouteTable-us-east-1a, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
 
 ```xml
 Name: Infra-Private-RouteTable-us-east-1a
 ```
 
-Step 9: Create a route table and name it Infra-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
+## Step 9: Create a route table and name it Infra-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
 
 ```xml
 Name: Infra-Private-RouteTable-us-east-1b
@@ -74,17 +74,17 @@ Destination : 0.0.0.0/0
 Target : Internet Gateway ID
 ```
 
-Step 11: Create the NAT Gateway in the public subnet us-east-1a Availability Zone and name it:
+## Step 11: Create the NAT Gateway in the public subnet us-east-1a Availability Zone and name it:
 ```xml
 Infra-Nat-Gateway-us-east-1a
 ```
 
-Step 12: Create the NAT Gateway in the public subnet us-east-1b Availability Zone and name it:
+## Step 12: Create the NAT Gateway in the public subnet us-east-1b Availability Zone and name it:
 ```xml
 Infra-Nat-Gateway-us-east-1b
 ```
 
-Step 13: Add the Infra-Nat-Gateway-us-east-1a NAT Gateway route to the Infra-Private-RouteTable-us-east-1a route table.
+## Step 13: Add the Infra-Nat-Gateway-us-east-1a NAT Gateway route to the Infra-Private-RouteTable-us-east-1a route table.
 
 ```xml
 Route Entry
@@ -93,7 +93,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-Step 14: Add the Infra-Nat-Gateway-us-east-1b NAT Gateway route to the Infra-Private-RouteTable-us-east-1b route table.
+## Step 14: Add the Infra-Nat-Gateway-us-east-1b NAT Gateway route to the Infra-Private-RouteTable-us-east-1b route table.
 
 ```xml
 Route Entry
@@ -154,13 +154,13 @@ Name: Prod-VPC-IGW
 Name: Prod-Public-RouteTable
 ```
 
-Step 22: Create a route table and name it Prod-Private-RouteTable-us-east-1a, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
+## Step 22: Create a route table and name it Prod-Private-RouteTable-us-east-1a, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
 
 ```xml
 Name: Prod-Private-RouteTable-us-east-1a
 ```
 
-Step 23: Create a route table and name it Prod-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
+## Step 23: Create a route table and name it Prod-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
 
 ```xml
 Name: Prod-Private-RouteTable-us-east-1b
@@ -185,7 +185,7 @@ Step 26: Create the NAT Gateway in the public subnet us-east-1b Availability Zon
 Prod-Nat-Gateway-us-east-1b
 ```
 
-Step 27: Add the Prod-Nat-Gateway-us-east-1a NAT Gateway route to the Prod-Private-RouteTable-us-east-1a route table.
+## Step 27: Add the Prod-Nat-Gateway-us-east-1a NAT Gateway route to the Prod-Private-RouteTable-us-east-1a route table.
 
 ```xml
 Route Entry
@@ -194,7 +194,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-Step 28: Add the Prod-Nat-Gateway-us-east-1b NAT Gateway route to the Prod-Private-RouteTable-us-east-1b route table.
+## Step 28: Add the Prod-Nat-Gateway-us-east-1b NAT Gateway route to the Prod-Private-RouteTable-us-east-1b route table.
 
 ```xml
 Route Entry
@@ -219,7 +219,7 @@ Infra-Public-RouteTable
 Infra-Private-RouteTable-us-east-1a
 Infra-Private-RouteTable-us-east-1b
 
-```xml
+```
 ```xml
 VPC-B CIDR : 10.60.0.0/16
 ```
@@ -232,7 +232,7 @@ Prod-Public-RouteTable
 Prod-Private-RouteTable-us-east-1a
 Prod-Private-RouteTable-us-east-1b
 
-```xml
+```
 ```xml
 VPC-B CIDR : 10.70.0.0/16
 ```
