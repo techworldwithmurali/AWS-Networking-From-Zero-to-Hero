@@ -1,6 +1,7 @@
 # Setting up Inter region VPC peering with same account
 ![Lab - Setting up Inter region VPC peering with the same account in telugu - Moole Muralidhara Reddy - Telugu Devops Guru](https://github.com/telugudevopsguru/AWS-Networking-5-Days-Practical-Live-Workshop/blob/b1a7f8992dbeb613ecaeba2f94b4626c30e100e0/Day%202%20-%20AWS%20VPC%20Peering/Images/Lab%20-%20Setting%20up%20Inter%20region%20VPC%20peering%20with%20the%20same%20account%20in%20telugu%20-%20Moole%20Muralidhara%20Reddy%20-%20Telugu%20Devops%20Guru.png)
 
+
 ### Step 1: Create the Infra VPC
 ```xml
 Name: Infra-VPC in US East (N. Virginia) us-east-1
@@ -102,7 +103,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-### Step 15: Create the PROD VPC
+### Step 15: Create the Prod VPC in different account
 ```xml
 Name: Prod-VPC in US East (Oregon) us-west-2
 CIDR : 10.60.0.0/16
