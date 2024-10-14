@@ -203,32 +203,32 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-## Step 29: Create the TGW for both regions
+#### Step 29: Create the TGW for both regions
 ```xml
 For us-east-1 - Name: Infra-VPC-TGW
 For us-west-2 - Name: Prod-VPC-TGW
 ```
-## Step 30: Create the TGW attachments for both VPC's.
+#### Step 30: Create the TGW attachments for both VPC's.
 ```xml
 For us-east-1 - Name: Infra-VPC-TGW-Attachment
 For us-west-2 - Name: Prod-VPC-TGW-Attachment
 ```
-## Step 31: Create the TGW route table and associate it with the TGW attachments.
+#### Step 31: Create the TGW route table and associate it with the TGW attachments.
 ```xml
 For us-east-1 - Name: Infra-VPC-TGW-RouteTable
 For us-east-1 - Name: Prod-VPC-TGW-RouteTable
 ```
-## Step 32: Create the TGW peering connection from Infra TGW to Prod TGW
+#### Step 32: Create the TGW peering connection from Infra TGW to Prod TGW
 ```xml
 Name: infra-vpc-to-prod-vpc-tgw-peering
 ```
-## Step 33: Accept the TGW peering connection in the destination region(us-west-2).
-## Step 34: Create the static route Prod VPC CIDR block to the TGW peering connection of Infra VPC account in TGW RouteTable.
+#### Step 33: Accept the TGW peering connection in the destination region(us-west-2).
+#### Step 34: Create the static route Prod VPC CIDR block to the TGW peering connection of Infra VPC account in TGW RouteTable.
 ```xml
 Route Table name - Infra-VPC-TGW-RouteTable
 Prod VPC CIDR : 10.60.0.0/16
 ```
-## Step 35: Create the static route Infra CIDR block to the TGW peering connection of Prod account in TGW RouteTable.
+#### Step 35: Create the static route Infra CIDR block to the TGW peering connection of Prod account in TGW RouteTable.
 ```xml
 Infra VPC CIDR : 10.70.0.0/16
 ```
