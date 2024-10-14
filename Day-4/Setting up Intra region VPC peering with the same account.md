@@ -243,6 +243,6 @@ Infra VPC CIDR : 10.70.0.0/16
 
 #### Step 34: Test the connectivity between the instances using the ping command.
 
-###### Congratulations, you have successfully set up VPC peering between two VPCs and tested connectivity between instances in the public subnets of each VPC.
+#### Congratulations, you have successfully set up intra-region VPC peering within the same account and tested connectivity between instances in each VPC
 
-###### Happy Learning
+##### Happy Learning
