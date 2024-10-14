@@ -21,23 +21,23 @@ Name: techworldwithmurali.in
 
 Create and Configure the Client VPN endpoints in your AWS environment.
 ```xml
-+ Name: Murali-VPN
++ Name: AWs Client VPN
 + Client IPv4 CIDR : 10.22.0.0/22
 
-+ DNS server 1 IP address - 10.0.0.2
-+ DNS server 1 IP address - 8.8.8.8
++ DNS server 1 IP address - 10.70.8.8
++ DNS server 1 IP address - 10.70.16.10
 ```
 ## 3.1: Target network associations
 
 + Associate the Client VPN endpoint with the target network(s) that you want to grant VPN access to.
 ```xml
-Add the public subnets to the target network associations.
+Add the private subnets to the target network associations.
 ```
 ## 3.2: Add the Authorization rules
 
 + Set up the necessary authorization rules to control which users have access to specific resources through the VPN.
 ```xml
-To allow all users, add the CIDR 10.0.0.0/16.
+To allow all users, add the CIDR 10.70.0.0/16
 ```
 ## 3.3: Download the Client Configuration
 
