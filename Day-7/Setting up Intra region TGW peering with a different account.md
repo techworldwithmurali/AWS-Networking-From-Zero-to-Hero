@@ -102,7 +102,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-#### Step 15: Create the Infra VPC
+#### Step 15: Create the Prod VPC
 ```xml
 Name: Prod-VPC in US East (N. Virginia) us-east-1
 CIDR : 10.60.0.0/16
@@ -254,7 +254,7 @@ Infra-Private-RouteTable-us-east-1b
 
 ```
 ```xml
-VPC-B CIDR : 10.60.0.0/16
+Prod CIDR : 10.60.0.0/16
 ```
 
 + Below the route tables, add a route for the Infra CIDR block to the **Prod-VPC-TGW-Attachment** connection:
@@ -267,7 +267,7 @@ Prod-Private-RouteTable-us-east-1b
 
 ```
 ```xml
-VPC-B CIDR : 10.70.0.0/16
+Infra CIDR : 10.70.0.0/16
 ```
 
 #### Step 37: Launch an EC2 instance in both VPC's public subnets.
