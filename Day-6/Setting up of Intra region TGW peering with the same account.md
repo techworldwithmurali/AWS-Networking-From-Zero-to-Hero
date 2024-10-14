@@ -203,22 +203,22 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-## Step 29: Create the TGW
+#### Step 29: Create the TGW
 ```xml
 Name: infra-vpc-to-prod-vpc-tgw
 ```
-## Step 30: Create the TGW attachments for both VPCs and select the subnets for the TGW
+#### Step 30: Create the TGW attachments for both VPCs and select the subnets for the TGW
 ```xml
 Name: Infra-VPC-TGW-Attachment
 Name: Prod-VPC-TGW-Attachment
 ```
-## Step 31: Create the TGW route table and associate it with the TGW attachments.
+#### Step 31: Create the TGW route table and associate it with the TGW attachments.
 ```xml
 Name: infra-vpc-to-prod-vpc-tgw-routetable
 Infra-VPC-TGW-Attachment
 Prod-VPC-TGW-Attachment
 ```
-## Step 32: Create the propagation for both Infra-VPC-TGW-Attachment and Prod-VPC-TGW-Attachment in the TGW route table.
+#### Step 32: Create the propagation for both Infra-VPC-TGW-Attachment and Prod-VPC-TGW-Attachment in the TGW route table.
 
 
 #### Step 33: Update the route tables in both VPCs to allow traffic to the other VPC.
@@ -249,11 +249,11 @@ Prod-Private-RouteTable-us-east-1b
 Infra VPC CIDR : 10.70.0.0/16
 ```
 
-## Step 34: Launch an EC2 instance in both VPC's public subnets.
+####  Step 34: Launch an EC2 instance in both VPC's public subnets.
 
-## Step 35: Update the Security Group Inbound rules for both instances to allow ICMP traffic.
+#### Step 35: Update the Security Group Inbound rules for both instances to allow ICMP traffic.
 
-## Step 36: Test the connectivity between the instances using the ping command.
+#### Step 36: Test the connectivity between the instances using the ping command.
 
 #####  Congratulations, you have successfully set up Intra region TGW peering with same account and tested connectivity between instances in each VPC
 
