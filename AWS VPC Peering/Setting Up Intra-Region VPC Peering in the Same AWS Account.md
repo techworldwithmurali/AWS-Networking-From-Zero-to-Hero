@@ -59,7 +59,7 @@ Name: Infra-Public-RouteTable
 Name: Infra-Private-RouteTable-us-east-1a
 ```
 
-#### Step 9: Create a route table and name it Infra-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
+#### Step 9: Create a route table and name it Infra-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1b to this route table.
 
 ```xml
 Name: Infra-Private-RouteTable-us-east-1b
@@ -102,7 +102,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-#### Step 15: Create the Infra VPC
+#### Step 15: Create the Prod  VPC in the same AWS account
 ```xml
 Name: Prod-VPC in US East (N. Virginia) us-east-1
 CIDR : 10.60.0.0/16
