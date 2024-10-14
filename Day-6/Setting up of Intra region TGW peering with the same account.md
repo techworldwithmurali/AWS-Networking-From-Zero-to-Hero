@@ -102,7 +102,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-### Step 15: Create the Infra VPC
+### Step 15: Create the Prod VPC
 ```xml
 Name: Prod-VPC in US East (N. Virginia) us-east-1
 CIDR : 10.60.0.0/16
@@ -233,7 +233,7 @@ Infra-Private-RouteTable-us-east-1b
 
 ```
 ```xml
-VPC-B CIDR : 10.60.0.0/16
+Prod VPC CIDR : 10.60.0.0/16
 ```
 
 + Below the route tables, add a route for the Infra CIDR block to the **Prod-VPC-TGW-Attachment** connection:
@@ -246,7 +246,7 @@ Prod-Private-RouteTable-us-east-1b
 
 ```
 ```xml
-VPC-B CIDR : 10.70.0.0/16
+Infra VPC CIDR : 10.70.0.0/16
 ```
 
 ## Step 34: Launch an EC2 instance in both VPC's public subnets.
@@ -255,6 +255,6 @@ VPC-B CIDR : 10.70.0.0/16
 
 ## Step 36: Test the connectivity between the instances using the ping command.
 
-####  Congratulations, you have successfully set up Intra region TGW peering with same account and tested connectivity between instances in the public subnets of each VPC.
+####  Congratulations, you have successfully set up Intra region TGW peering with same account and tested connectivity between instances in each VPC
 
 ####  Happy Learning
