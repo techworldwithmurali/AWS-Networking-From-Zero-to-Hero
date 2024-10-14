@@ -46,6 +46,7 @@
 - **Routing**: Supports transitive routing, allowing traffic to flow between any attached network without needing direct peering connections.
 - **Management**: Centralized management simplifies connectivity management across a large number of VPCs and networks.
 
+###  What is AWS Resource Access Manager (RAM)
 **AWS Resource Access Manager (RAM)** is a service provided by Amazon Web Services that allows you to securely share AWS resources across AWS accounts within your organization. It simplifies the management of resource sharing by centralizing access control and eliminating the need for resource duplication.
 
 ### Key Features and Use Cases of AWS Resource Access Manager:
