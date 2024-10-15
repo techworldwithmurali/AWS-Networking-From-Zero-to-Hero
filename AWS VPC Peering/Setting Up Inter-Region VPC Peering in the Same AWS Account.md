@@ -103,7 +103,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-#### Step 15: Create the Prod VPC in Same account
+#### Step 15: Create the Prod VPC in Same account different region - Oregon - us-west-2
 ```xml
 Name: Prod-VPC in US East (Oregon) us-west-2
 CIDR : 10.60.0.0/16
