@@ -223,7 +223,7 @@ For us-east-1 - Name: Prod-VPC-TGW-RouteTable
 Name: infra-vpc-to-prod-vpc-tgw-peering
 ```
 #### Step 33: Accept the TGW peering connection in the destination account region(us-west-2).
-## Step 34: Create the static route Prod VPC CIDR block to the TGW peering connection of Infra VPC account in TGW RouteTable.
+#### Step 34: Create the static route Prod VPC CIDR block to the TGW peering connection of Infra VPC account in TGW RouteTable.
 ```xml
 Route Table name - Infra-VPC-TGW-RouteTable
 Prod VPC CIDR : 10.60.0.0/16
