@@ -160,7 +160,7 @@ Name: Prod-Public-RouteTable
 Name: Prod-Private-RouteTable-us-east-1a
 ```
 
-#### Step 23: Create a route table and name it Prod-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
+#### Step 23: Create a route table and name it Prod-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1b to this route table.
 
 ```xml
 Name: Prod-Private-RouteTable-us-east-1b
