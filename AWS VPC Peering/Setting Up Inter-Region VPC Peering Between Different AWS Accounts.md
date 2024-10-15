@@ -60,7 +60,7 @@ Name: Infra-Public-RouteTable
 Name: Infra-Private-RouteTable-us-east-1a
 ```
 
-#### Step 9: Create a route table and name it Infra-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
+#### Step 9: Create a route table and name it Infra-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1b to this route table.
 
 ```xml
 Name: Infra-Private-RouteTable-us-east-1b
@@ -103,7 +103,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-#### Step 15: Create the Prod VPC in Different account
+#### Step 15: Create the Prod VPC in Different account Oregon - us-west-2
 ```xml
 Name: Prod-VPC in US East (Oregon) us-west-2
 CIDR : 10.60.0.0/16
@@ -161,7 +161,7 @@ Name: Prod-Public-RouteTable
 Name: Prod-Private-RouteTable-us-west-2a
 ```
 
-#### Step 23: Create a route table and name it Prod-Private-RouteTable-us-west-2b, then attach the private, app, and data subnets in Availability Zone us-west-2a to this route table.
+#### Step 23: Create a route table and name it Prod-Private-RouteTable-us-west-2b, then attach the private, app, and data subnets in Availability Zone us-west-2b to this route table.
 
 ```xml
 Name: Prod-Private-RouteTable-us-west-2b
@@ -195,7 +195,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-#### Step 28: Add the Prod-Nat-Gateway-us-east-1b NAT Gateway route to the Prod-Private-RouteTable-us-east-1b route table.
+#### Step 28: Add the Prod-Nat-Gateway-us-east-1b NAT Gateway route to the Prod-Private-RouteTable-us-east-2b route table.
 
 ```xml
 Route Entry
