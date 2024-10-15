@@ -59,7 +59,7 @@ Name: Infra-Public-RouteTable
 Name: Infra-Private-RouteTable-us-east-1a
 ```
 
-#### Step 9: Create a route table and name it Infra-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1a to this route table.
+#### Step 9: Create a route table and name it Infra-Private-RouteTable-us-east-1b, then attach the private, app, and data subnets in Availability Zone us-east-1b to this route table.
 
 ```xml
 Name: Infra-Private-RouteTable-us-east-1b
@@ -160,7 +160,7 @@ Name: Prod-Public-RouteTable
 Name: Prod-Private-RouteTable-us-west-2a
 ```
 
-#### Step 23: Create a route table and name it Prod-Private-RouteTable-us-west-2b, then attach the private, app, and data subnets in Availability Zone us-west-2a to this route table.
+#### Step 23: Create a route table and name it Prod-Private-RouteTable-us-west-2b, then attach the private, app, and data subnets in Availability Zone us-west-2b to this route table.
 
 ```xml
 Name: Prod-Private-RouteTable-us-west-2b
@@ -230,6 +230,7 @@ Prod VPC CIDR : 10.60.0.0/16
 ```
 #### Step 35: Create the static route Infra CIDR block to the TGW peering connection of Prod account in TGW RouteTable.
 ```xml
+Route Table name - Prod-VPC-TGW-RouteTable
 Infra VPC CIDR : 10.70.0.0/16
 ```
 ##### Step 36: Update the route tables in both VPCs to allow traffic to the other VPC.
