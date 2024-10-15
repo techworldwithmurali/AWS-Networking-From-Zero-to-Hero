@@ -230,8 +230,8 @@ Prod VPC CIDR : 10.60.0.0/16
 ```xml
 Route Tables:
 Prod-Public-RouteTable
-Prod-Private-RouteTable-us-east-1a
-Prod-Private-RouteTable-us-east-1b
+Prod-Private-RouteTable-us-west-2a
+Prod-Private-RouteTable-us-west-2b
 
 ```
 ```xml
