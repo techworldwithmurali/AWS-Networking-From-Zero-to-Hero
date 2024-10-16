@@ -24,8 +24,9 @@ Create and Configure the Client VPN endpoints in your AWS environment.
 + Name: AWs Client VPN
 + Client IPv4 CIDR : 10.22.0.0/22
 
-+ DNS server 1 IP address - 10.70.8.8
-+ DNS server 1 IP address - 10.70.16.10
+
++ DNS server 1 IP address - 10.70.84.141
++ DNS server 1 IP address - 10.70.93.127
 ```
 #### 3.1: Target network associations
 
