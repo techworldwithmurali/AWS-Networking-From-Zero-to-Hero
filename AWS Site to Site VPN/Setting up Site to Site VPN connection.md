@@ -18,25 +18,21 @@ ipsec --version
 ```
 #### Step 2: Create the AWS Customer Gateway in AWS Side.
 ```xml
-Name: techworldwithmurali-CGW
+Name: datacenter-CGW
 ```
 #### Step 3: Create the Virtual Private Gateway and attach it to the VPC in AWS Side.
 ```xml
-Name: techworldwithmurali-VPG
+Name: datacenter-VPG
 ```
 #### Step 4: Create the Site-to-Site VPN Connection in AWS Side.
 ```xml
-Name: techworldwithmurali-site-to-site
+Name: datacenter-site-to-site
 ```
 ##### Static IP prefixes:
 ```xml
-AWS CIDR - 10.70.0.0/16
 On-Premises - 192.168.0.0/16
 ```
-```xml
-Local IPv4 network CIDR - 192.168.0.0/16 (On-Premises)
-Remote IPv4 network CIDR - 10.70.0.0/16 (AWS CIDR)
-```
+
 #### Step 5: Add the route table preparation for the Virtual Private Gateway in AWs Side.
 
 #### Step 6: Download the Configuration of the Site-to-Site VPN Connection and configure it in OpenSwan Server.
