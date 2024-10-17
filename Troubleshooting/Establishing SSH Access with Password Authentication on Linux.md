@@ -1,4 +1,4 @@
-### Connect to the Server Using Username and Password Instead of PEM File
+### Establishing SSH Access with Password Authentication on Linux
 
 #### Step 1: Create the User
 1. **Log in to the server** (if you have another access method).
