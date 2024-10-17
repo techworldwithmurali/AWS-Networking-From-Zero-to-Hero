@@ -1,4 +1,4 @@
-## Top 10 Tips for Resolving AWS Server Connection Issues.md
+## Top 10 Tips for Resolving AWS Server Connection Issues
 
 Facing AWS server connection issues? In this video, we share the top 10 tips to troubleshoot and resolve common access problems. 
 
