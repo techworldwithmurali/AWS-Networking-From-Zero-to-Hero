@@ -1,4 +1,4 @@
-# Creating an Infra VPC in AWS
+# Create a Network Access Control List (NACL)
 
 ![Lab - Setting up AWS NACL - Moole Muralidhara Reddy - Tech World With Murali](https://github.com/techworldwithmurali/AWS-Networking-From-Zero-to-Hero/blob/main/AWS%20VPC/images/Setting%20up%20AWS%20NACL-%20Moole%20Muralidhara%20Reddy%20-%20Tech%20World%20with%20Murali.png)
 
@@ -75,16 +75,33 @@ Route Entry
 Destination : 0.0.0.0/0
 Target : Internet Gateway ID
 ```
-#### Step 11: Create the Public NACL
+#### Step 11: Create and Add the Infra-Nat-Gateway-us-east-1a NAT Gateway route to the Infra-Private-RouteTable-us-east-1a route table.
+
+```xml
+Route Entry
+
+Destination : 0.0.0.0/0
+Target : NAT Gateway ID
+```
+
+#### Step 12: Create and Add the Infra-Nat-Gateway-us-east-1b NAT Gateway route to the Infra-Private-RouteTable-us-east-1b route table.
+
+```xml
+Route Entry
+
+Destination : 0.0.0.0/0
+Target : NAT Gateway ID
+```
+#### Step 13: Create the Public NACL
 ```xml
 Name: Infra-Public-NACL
 ```
-####  Step 12: Attach the Public Subnets to the Public NACL
-####  Step 13: Create the Public NACL
+####  Step 14: Attach the Public Subnets to the Public NACL
+####  Step 15: Create the Public NACL
 ```xml
 Name: Infra-Private-NACL
 ```
-####  Step 14: Attach the private , app and  data  Subnets to the Private  NACL
+####  Step 16: Attach the private , app and  data  Subnets to the Private  NACL
 
-#### Step 15: Add the Inbound rules and test them
+#### Step 17: Add the Inbound rules and test them
 ####  Congratulations! You have successfully set up and tested the AWS NACL.
