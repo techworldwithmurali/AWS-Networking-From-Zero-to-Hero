@@ -75,7 +75,7 @@ Route Entry
 Destination : 0.0.0.0/0
 Target : Internet Gateway ID
 ```
-#### Step 11: Add the Infra-Nat-Gateway-us-east-1a NAT Gateway route to the Infra-Private-RouteTable-us-east-1a route table.
+#### Step 11: Create and Add the Infra-Nat-Gateway-us-east-1a NAT Gateway route to the Infra-Private-RouteTable-us-east-1a route table.
 
 ```xml
 Route Entry
@@ -84,7 +84,7 @@ Destination : 0.0.0.0/0
 Target : NAT Gateway ID
 ```
 
-#### Step 12: Add the Infra-Nat-Gateway-us-east-1b NAT Gateway route to the Infra-Private-RouteTable-us-east-1b route table.
+#### Step 12: Create and Add the Infra-Nat-Gateway-us-east-1b NAT Gateway route to the Infra-Private-RouteTable-us-east-1b route table.
 
 ```xml
 Route Entry
