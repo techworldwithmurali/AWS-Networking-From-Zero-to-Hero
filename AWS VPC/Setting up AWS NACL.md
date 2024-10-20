@@ -102,6 +102,6 @@ Name: Infra-Public-NACL
 Name: Infra-Private-NACL
 ```
 ####  Step 16: Attach the private , app and  data  Subnets to the Private  NACL
-
-#### Step 17: Add the Inbound rules and test them
+#### Step 17: Launch the Linux EC2 instance in the Public Subnet.
+#### Step 18: Add the Inbound rules and test them
 ####  Congratulations! You have successfully set up and tested the AWS NACL.
