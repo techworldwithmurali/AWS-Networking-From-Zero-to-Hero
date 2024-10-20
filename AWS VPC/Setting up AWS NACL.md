@@ -1,4 +1,4 @@
-# Create a Network Access Control List (NACL)
+# Creating  a Network Access Control List (NACL)
 
 ![Lab - Setting up AWS NACL - Moole Muralidhara Reddy - Tech World With Murali](https://github.com/techworldwithmurali/AWS-Networking-From-Zero-to-Hero/blob/main/AWS%20VPC/images/Setting%20up%20AWS%20NACL-%20Moole%20Muralidhara%20Reddy%20-%20Tech%20World%20with%20Murali.png)
 
