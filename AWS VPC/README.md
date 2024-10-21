@@ -319,6 +319,7 @@ In AWS, you can attach security groups to a variety of services. Here’s a list
 15. **AWS Batch** (for jobs running in VPC)
 
 Security groups are primarily associated with resources that operate within a Virtual Private Cloud (VPC). Always refer to the AWS documentation for the most up-to-date information regarding services and security group compatibility.
+
 ----
 ### Lab Session - Create a Security Group in AWS VPC
 
