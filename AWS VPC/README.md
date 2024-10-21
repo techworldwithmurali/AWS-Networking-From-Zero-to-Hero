@@ -299,6 +299,26 @@ By configuring route tables appropriately, you can control the flow of traffic w
 - **Stateful:** If you allow an inbound request from an IP, the response is automatically allowed.
 - **Instance-level Security:** Operates at the instance level.
 - **Rules:** Rules can be added or removed without restarting the instance.
+  
+In AWS, you can attach security groups to a variety of services. Here’s a list of some key AWS services where security groups can be used:
+
+1. **Amazon EC2** (Elastic Compute Cloud)
+2. **Amazon RDS** (Relational Database Service)
+3. **Amazon Redshift**
+4. **Amazon ElastiCache**
+5. **Amazon EMR** (Elastic MapReduce)
+6. **Amazon ECS** (Elastic Container Service)
+7. **Amazon EKS** (Elastic Kubernetes Service)
+8. **AWS Lambda** (for VPC-enabled functions)
+9. **Amazon Aurora**
+10. **Amazon CloudMap**
+11. **Amazon Neptune**
+12. **Amazon Elastic File System (EFS)** (for mount targets)
+13. **Amazon Lightsail**
+14. **AWS App Runner**
+15. **AWS Batch** (for jobs running in VPC)
+
+Security groups are primarily associated with resources that operate within a Virtual Private Cloud (VPC). Always refer to the AWS documentation for the most up-to-date information regarding services and security group compatibility.
 ----
 ### Lab Session - Create a Security Group in AWS VPC
 
